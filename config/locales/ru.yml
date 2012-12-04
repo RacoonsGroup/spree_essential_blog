@@ -1,7 +1,7 @@
 ru:
 
   # Spree Hax! Missing translation...
-  image_settings_description: "Настройки изображения
+  image_settings_description: "Настройки изображения"
 
   activerecord:
     attributes:
