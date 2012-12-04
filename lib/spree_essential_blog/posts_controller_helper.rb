@@ -24,6 +24,7 @@ private
   end
 
   def get_blog
+    params[:blog_id] ||= 'forum'
     @blog = Spree::Blog.find_by_permalink!(params[:blog_id])
   end
   
