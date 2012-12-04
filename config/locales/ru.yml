@@ -1,0 +1,106 @@
+ru:
+
+  # Spree Hax! Missing translation...
+  image_settings_description: "Настройки изображения
+
+  activerecord:
+    attributes:
+      blog:
+        model_name: "Блог"
+        name: "Название"
+        permalink: "Постоянная ссылка"
+      post:
+        model_name: "Пост"
+        title: "Заголовок"
+        posted_at: "Создан"
+        body: "Текст"
+        live: "Опубликован"
+        tags: "Теги"
+      post_category:
+        model_name: "Категория"
+        name: "Название"
+        permalink: "Постоянная ссылка"
+
+  spree:
+
+    admin:
+      subnav:
+        posts: "Посты"
+
+    blogs:
+      admin:
+        blogs:
+          new:
+            new_blog: "Новый блог"
+          index:
+            new_blog: "Новый блог"
+
+
+        posts:
+          new:
+            new_post: "Новое сообщение"
+        post_products:
+          index:
+            add_related_product: "Добавить соответствующие товары"
+        post_categories:
+          index:
+            manage_categories: "Управление категориями"
+        new:
+          new_category: "Новая категория"
+        edit:
+          edit_category: "Редактировать категорию"
+
+        shared:
+          post_tabs:
+            post_details: "Детали поста"
+            editing_post: "Пост редактирован"
+            related_products: "Похожие посты"
+            post_categories: "Категории"
+      comments: "Комментарии"
+      home:
+        title: "Последние посты"
+      archive: "Архив блога"
+      no_posts: "Посты не найдены!"
+      posts:
+        index:
+          blog: "Блог"
+          rss: "Подписаться на RSS"
+        archive:
+          title: "Архив"
+          where_to_next: "Что дальше?"
+          go_to_store: "В магазин"
+          back_to_posts: "Вернуться в блог"
+        show:
+          tagged: "Теги"
+      settings:
+        blogs: "Управление блогами"
+        explain_blogs: "Добавить или редактировать блог для поста"
+        disqus: "Настройки дискуссии"
+        explain_disqus: "Настроить комментарии для Блога"
+        disqus_shortname: "Короткое название дискуссии"
+      shared:
+        sidebar:
+          recent_posts: "Последние посты"
+          categories: "Категории"
+          archives: "Архив"
+          view_archive: "Показать полный архив"
+          tags: "Теги"
+        preview:
+          read_more: "Читать далее"
+        post_tabs:
+          editing_post: "Пост редактирован"
+          post_details: "Детали поста"
+          related_products: "Сопутствующие товары"
+          post_categories: "Категории"
+      subnav:
+        posts: "Посты блога"
+
+  time:
+    formats:
+      date_time: "%x %X"
+      date_full: "%A %B %d, %Y"
+      detailed: "%A %B %d, %Y at %I:%M%p"
+      date_only: "%x"
+  date:
+    formats:
+      month_year: "%B %Y"
