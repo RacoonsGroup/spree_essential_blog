@@ -14,13 +14,11 @@ Spree::Core::Engine.routes.append do
       end
       resource :disqus_settings
     end
-    constraints :blog_id => /[a-z0-9\/]{3,}/ do
-      get ":blog_id/:id" => "posts#show",  :as => :full_post
-      get ":blog_id/category/:id"   => "post_categories#show", :as => :post_category, :constraints => { :id => /.*/ }
-      get ":blog_id/search/:query"  => "posts#search",         :as => :search_posts, :query => /.*/
-      get ":blog_id/archive"        => "posts#archive",        :as => :archive_posts
-      get ":blog_id"                => "posts#index",          :as => :blog_posts
-    end
+    get ":blog_id/:id" => "posts#show",  :as => :full_post
+    get ":blog_id/category/:id"   => "post_categories#show", :as => :post_category, :constraints => { :id => /.*/ }
+    get ":blog_id/search/:query"  => "posts#search",         :as => :search_posts, :query => /.*/
+    get ":blog_id/archive"        => "posts#archive",        :as => :archive_posts
+    get ":blog_id"                => "posts#index",          :as => :blog_posts
   end
 
 end
