@@ -28,7 +28,7 @@ class Spree::Post < ActiveRecord::Base
   scope :past,    where("posted_at <= ?", Time.now).ordered
   scope :live,    where(:live => true )
 
- 	before_validation :create_path, :if => proc{ |record| record.title_changed? }
+ 	#before_validation :create_path, :if => proc{ |record| record.title_changed? }
   
   
   # Creates date-part accessors for the posted_at timestamp for grouping purposes.
@@ -78,7 +78,8 @@ class Spree::Post < ActiveRecord::Base
       val = val.is_a?(Symbol) ? send(val) : val
       RDiscount.new(val).to_html.html_safe
     end
-		
+    
+=begin
     def create_path
   		count = 2
   		new_path = title.to_s.parameterize
@@ -89,7 +90,10 @@ class Spree::Post < ActiveRecord::Base
   			count += 1
   		end
   		self.path = dupe_path || new_path
+
+      path
   	end
+=end
   	
   	def path_exists?(new_path)
   		post = Spree::Post.find_by_path(new_path)
